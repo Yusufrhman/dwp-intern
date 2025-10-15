@@ -22,16 +22,28 @@ export default function LoginPage() {
     await login(phone, password);
   };
 
+  const onKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
+    if (e.key === "Enter" && !loading) handleSubmit();
+  };
+
   return (
     <div className="min-h-screen bg-white flex items-center justify-center p-4">
-      <div className="relative w-full max-w-md">
-        <div className="bg-white rounded-2xl shadow-2xl p-8 backdrop-blur-lg">
-          <div className="text-center mb-8">
-            <h1 className="text-3xl font-bold text-gray-800 mb-2">Sign In</h1>
-            <p className="text-gray-500">Access your internet services</p>
+      <div className="w-full max-w-md" onKeyDown={onKeyDown}>
+        <div className="bg-white border border-gray-200 rounded-2xl p-8">
+          <div className="text-center mb-6">
+            <h1 className="text-2xl font-semibold text-gray-900">Sign In</h1>
+            <p className="text-sm text-gray-500 mt-1">
+              Access your internet services
+            </p>
           </div>
 
-          <div className="space-y-6">
+          {error && (
+            <div className="mb-4 text-sm text-red-700 bg-red-50 border border-red-200 rounded-lg px-3 py-2">
+              {error}
+            </div>
+          )}
+
+          <div className="space-y-5">
             <Input
               id="phone"
               type="tel"
@@ -40,7 +52,6 @@ export default function LoginPage() {
               value={phone}
               onChange={setPhone}
               icon={Phone}
-              error={error || undefined}
             />
 
             <Input
@@ -51,7 +62,6 @@ export default function LoginPage() {
               value={password}
               onChange={setPassword}
               icon={Lock}
-              // Password belum digunakan, tapi tetap ditampilkan
             />
 
             <MainButton

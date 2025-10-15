@@ -4,7 +4,7 @@
       "id": 1,
       "password": "123456",
       "name": "Admin",
-      "phone": "081200000000",
+      "phone": "083183000267",
       "role": "admin"
     },
     {
@@ -24,7 +24,11 @@
       "price": 10000,
       "description": "1GB for 24 hours, all networks",
       "isActive": true,
-      "tags": ["Daily", "All Network", "Starter"]
+      "tags": [
+        "Daily",
+        "All Network",
+        "Starter"
+      ]
     },
     {
       "id": 102,
@@ -34,7 +38,11 @@
       "price": 15000,
       "description": "2GB daily + 500MB social bonus",
       "isActive": true,
-      "tags": ["Daily", "Bonus", "All Network"]
+      "tags": [
+        "Daily",
+        "Bonus",
+        "All Network"
+      ]
     },
     {
       "id": 103,
@@ -44,7 +52,10 @@
       "price": 8000,
       "description": "1.5GB Instagram/Facebook/TikTok for 24 hours",
       "isActive": true,
-      "tags": ["Daily", "Social"]
+      "tags": [
+        "Daily",
+        "Social"
+      ]
     },
     {
       "id": 104,
@@ -54,7 +65,11 @@
       "price": 5000,
       "description": "Unlimited WhatsApp/Telegram/Line (FUP 1GB)",
       "isActive": true,
-      "tags": ["Daily", "Chat", "Unlimited"]
+      "tags": [
+        "Daily",
+        "Chat",
+        "Unlimited"
+      ]
     },
     {
       "id": 105,
@@ -64,7 +79,11 @@
       "price": 25000,
       "description": "5GB for 7 days",
       "isActive": true,
-      "tags": ["Weekly", "All Network", "Value"]
+      "tags": [
+        "Weekly",
+        "All Network",
+        "Value"
+      ]
     },
     {
       "id": 106,
@@ -74,7 +93,11 @@
       "price": 30000,
       "description": "8GB weekly, hotspot allowed",
       "isActive": true,
-      "tags": ["Weekly", "Hotspot", "All Network"]
+      "tags": [
+        "Weekly",
+        "Hotspot",
+        "All Network"
+      ]
     },
     {
       "id": 107,
@@ -84,7 +107,11 @@
       "price": 22000,
       "description": "Low-latency data optimized for popular games",
       "isActive": true,
-      "tags": ["Weekly", "Gaming", "Low Latency"]
+      "tags": [
+        "Weekly",
+        "Gaming",
+        "Low Latency"
+      ]
     },
     {
       "id": 108,
@@ -94,7 +121,11 @@
       "price": 40000,
       "description": "10GB for YouTube/Netflix/Disney+",
       "isActive": true,
-      "tags": ["Weekly", "Video", "Streaming"]
+      "tags": [
+        "Weekly",
+        "Video",
+        "Streaming"
+      ]
     },
     {
       "id": 109,
@@ -104,7 +135,11 @@
       "price": 20000,
       "description": "7GB for social media apps",
       "isActive": true,
-      "tags": ["Weekly", "Social", "Popular"]
+      "tags": [
+        "Weekly",
+        "Social",
+        "Popular"
+      ]
     },
     {
       "id": 110,
@@ -114,7 +149,11 @@
       "price": 42000,
       "description": "12GB for 7 days + 1GB midnight",
       "isActive": true,
-      "tags": ["Weekly", "Midnight Bonus", "All Network"]
+      "tags": [
+        "Weekly",
+        "Midnight Bonus",
+        "All Network"
+      ]
     },
     {
       "id": 111,
@@ -124,7 +163,11 @@
       "price": 60000,
       "description": "15GB for 30 days, +1GB chat bonus",
       "isActive": true,
-      "tags": ["Monthly", "All Network", "Popular"]
+      "tags": [
+        "Monthly",
+        "All Network",
+        "Popular"
+      ]
     },
     {
       "id": 112,
@@ -134,7 +177,11 @@
       "price": 75000,
       "description": "20GB + 5GB midnight (00:00–06:00)",
       "isActive": true,
-      "tags": ["Monthly", "Midnight Bonus", "All Network"]
+      "tags": [
+        "Monthly",
+        "Midnight Bonus",
+        "All Network"
+      ]
     },
     {
       "id": 113,
@@ -144,7 +191,11 @@
       "price": 90000,
       "description": "30GB all-access, hotspot allowed",
       "isActive": true,
-      "tags": ["Monthly", "Hotspot", "All Network"]
+      "tags": [
+        "Monthly",
+        "Hotspot",
+        "All Network"
+      ]
     },
     {
       "id": 114,
@@ -154,7 +205,11 @@
       "price": 95000,
       "description": "25GB streaming + 5GB weekend bonus",
       "isActive": true,
-      "tags": ["Monthly", "Video", "Weekend Bonus"]
+      "tags": [
+        "Monthly",
+        "Video",
+        "Weekend Bonus"
+      ]
     },
     {
       "id": 115,
@@ -164,7 +219,11 @@
       "price": 45000,
       "description": "10GB social apps for 30 days",
       "isActive": true,
-      "tags": ["Monthly", "Social", "Budget"]
+      "tags": [
+        "Monthly",
+        "Social",
+        "Budget"
+      ]
     },
     {
       "id": 116,
@@ -174,7 +233,11 @@
       "price": 30000,
       "description": "Unlimited chat apps (FUP 10GB)",
       "isActive": true,
-      "tags": ["Monthly", "Chat", "Unlimited"]
+      "tags": [
+        "Monthly",
+        "Chat",
+        "Unlimited"
+      ]
     },
     {
       "id": 117,
@@ -184,7 +247,11 @@
       "price": 50000,
       "description": "12GB + 2GB e-learning portals",
       "isActive": true,
-      "tags": ["Monthly", "Student", "E-Learning"]
+      "tags": [
+        "Monthly",
+        "Student",
+        "E-Learning"
+      ]
     },
     {
       "id": 118,
@@ -194,7 +261,11 @@
       "price": 120000,
       "description": "40GB + priority video call routing",
       "isActive": true,
-      "tags": ["Monthly", "WFH", "Priority"]
+      "tags": [
+        "Monthly",
+        "WFH",
+        "Priority"
+      ]
     },
     {
       "id": 119,
@@ -204,7 +275,11 @@
       "price": 80000,
       "description": "15GB all-net + 5GB social/video",
       "isActive": true,
-      "tags": ["Monthly", "Combo", "Mixed"]
+      "tags": [
+        "Monthly",
+        "Combo",
+        "Mixed"
+      ]
     },
     {
       "id": 120,
@@ -214,54 +289,36 @@
       "price": 160000,
       "description": "60GB high-speed, hotspot + tethering",
       "isActive": true,
-      "tags": ["Monthly", "Premium", "High Speed"]
+      "tags": [
+        "Monthly",
+        "Premium",
+        "High Speed"
+      ]
     }
   ],
   "transactions": [
     {
-      "id": 9001,
-      "userId": 2,
-      "packageId": 111,
-      "msisdn": "08123456789",
-      "status": "SUCCESS",
-      "price": 60000,
-      "createdAt": "2025-10-10T08:44:00.000Z"
-    },
-    {
-      "id": 9002,
-      "userId": 2,
+      "id": "6100",
+      "userId": 1,
       "packageId": 101,
-      "msisdn": "08123456789",
+      "package": {
+        "id": 101,
+        "name": "Internet 1GB Daily",
+        "category": "Daily",
+        "validDays": 1,
+        "price": 10000,
+        "description": "1GB for 24 hours, all networks",
+        "isActive": true,
+        "tags": [
+          "Daily",
+          "All Network",
+          "Starter"
+        ]
+      },
+      "msisdn": "083183000267",
       "status": "SUCCESS",
       "price": 10000,
-      "createdAt": "2025-10-11T07:12:00.000Z"
-    },
-    {
-      "id": 9003,
-      "userId": 2,
-      "packageId": 108,
-      "msisdn": "08123456789",
-      "status": "SUCCESS",
-      "price": 40000,
-      "createdAt": "2025-10-12T12:30:00.000Z"
-    },
-    {
-      "id": 9004,
-      "userId": 2,
-      "packageId": 116,
-      "msisdn": "08123456789",
-      "status": "SUCCESS",
-      "price": 30000,
-      "createdAt": "2025-10-13T09:05:00.000Z"
-    },
-    {
-      "id": 9005,
-      "userId": 2,
-      "packageId": 120,
-      "msisdn": "08123456789",
-      "status": "SUCCESS",
-      "price": 160000,
-      "createdAt": "2025-10-14T10:22:00.000Z"
+      "createdAt": "2025-10-15T04:54:33.305Z"
     }
   ]
 }

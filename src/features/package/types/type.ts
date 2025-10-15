@@ -1,5 +1,5 @@
 export interface Package {
-  id: number;
+  id?: string | number;
   name: string;
   category: string;
   validDays: number;

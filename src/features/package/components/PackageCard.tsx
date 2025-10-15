@@ -1,52 +1,53 @@
 import { BadgeCheck, ShoppingCart } from "lucide-react";
 import MainButton from "../../../components/buttons/MainButton";
 import { formatRupiah } from "../../../utils/formatToRupiah";
+import type { Package } from "../types/type";
 
 interface PackageCardProps {
-  id: number;
-  name: string;
-  description: string;
-  price: number;
-  tags?: string[];
-  onBuy?: (id: number) => void;
+  p: Package;
+  onBuy?: (p: Package) => void;
 }
 
-export default function PackageCard({
-  id,
-  name,
-  description,
-  price,
-  tags = [],
-  onBuy,
-}: PackageCardProps) {
+export default function PackageCard({ p, onBuy }: PackageCardProps) {
   return (
-    <article className="relative bg-white rounded-2xl shadow-xl flex flex-col justify-between h-full p-6">
-      <h2 className="text-xl font-semibold text-gray-800 leading-tight">
-        {name}
-      </h2>
-      <div className="mt-3 flex flex-wrap items-center gap-2">
-        {tags.map((tag) => (
-          <span
-            key={tag}
-            className="inline-flex items-center gap-1.5 text-sm px-3 py-1 rounded-full bg-gradient-to-r from-green-50 to-emerald-50 text-emerald-700 border border-emerald-100"
-          >
-            <BadgeCheck className="w-4 h-4" />
-            {tag}
-          </span>
-        ))}
+    <article
+      className="border border-gray-200 rounded-xl p-5 flex flex-col justify-between h-full
+      hover:border-emerald-500 transition-colors duration-200"
+    >
+      <div>
+        <h2 className="text-lg font-semibold text-gray-800">{p.name}</h2>
+
+        {p != null && p.tags!.length > 0 && (
+          <div className="mt-3 flex flex-wrap gap-2">
+            {p.tags!.map((tag) => (
+              <span
+                key={tag}
+                className="inline-flex items-center gap-1 text-xs px-2.5 py-1 rounded-full 
+                border border-emerald-200 text-emerald-700 bg-emerald-50"
+              >
+                <BadgeCheck className="w-3.5 h-3.5" />
+                {tag}
+              </span>
+            ))}
+          </div>
+        )}
+
+        <p className="mt-4 text-sm text-gray-600 leading-relaxed">
+          {p.description}
+        </p>
       </div>
 
-      <p className="mt-4 text-gray-600">{description}</p>
-
       <div className="mt-6">
-        <div className="text-sm text-gray-500">Price</div>
-        <div className="text-3xl font-extrabold bg-gradient-to-r from-green-500 to-emerald-600 bg-clip-text text-transparent">
-          {formatRupiah(price)}
+        <div className="text-xs text-gray-500 uppercase tracking-wide">
+          Price
+        </div>
+        <div className="text-2xl font-semibold text-gray-900">
+          {formatRupiah(p.price)}
         </div>
       </div>
 
       <div className="mt-6">
-        <MainButton onClick={() => onBuy?.(id)} icon={ShoppingCart}>
+        <MainButton onClick={() => onBuy?.(p)} icon={ShoppingCart}>
           Buy Now
         </MainButton>
       </div>

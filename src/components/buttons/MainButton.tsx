@@ -4,6 +4,7 @@ interface ButtonProps {
   isLoading?: boolean;
   children: React.ReactNode;
   icon?: any;
+  className?: string;
 }
 
 export default function MainButton({
@@ -12,19 +13,24 @@ export default function MainButton({
   isLoading = false,
   children,
   icon: Icon,
+  className,
 }: ButtonProps) {
   return (
     <button
       onClick={onClick}
       disabled={disabled}
-      className="w-full bg-gradient-to-r from-green-500 to-emerald-600 text-white py-3 rounded-lg font-semibold hover:from-green-600 hover:to-emerald-700 transition duration-200 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl disabled:opacity-50 cursor-pointer disabled:cursor-not-allowed"
+      className={` w-full flex items-center justify-center gap-2 py-2.5 rounded-lg cursor-pointer
+        font-medium text-white bg-emerald-600 
+        hover:bg-emerald-700 active:bg-emerald-800
+        transition-colors duration-200
+        disabled:opacity-60 disabled:cursor-not-allowed ${className}`}
     >
       {isLoading ? (
-        <div className="w-6 h-6 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+        <div className="w-5 h-5 border-2 border-white/70 border-t-transparent rounded-full animate-spin"></div>
       ) : (
         <>
-          {children}
           {Icon && <Icon className="w-5 h-5" />}
+          <span>{children}</span>
         </>
       )}
     </button>
