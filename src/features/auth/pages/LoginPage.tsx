@@ -14,6 +14,10 @@ export default function LoginPage() {
 
   useEffect(() => {
     if (user) {
+      if (user.role === "admin") {
+        navigate("/admin");
+        return;
+      }
       navigate("/dashboard");
     }
   }, [user, navigate]);
@@ -69,6 +73,7 @@ export default function LoginPage() {
               disabled={loading}
               isLoading={loading}
               icon={ArrowRight}
+              className="w-full"
             >
               Sign In
             </MainButton>

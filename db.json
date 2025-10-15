@@ -1,14 +1,14 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "password": "123456",
       "name": "Admin",
       "phone": "083183000267",
       "role": "admin"
     },
     {
-      "id": 2,
+      "id": "2",
       "password": "123456",
       "name": "Demo User",
       "phone": "08123456789",
@@ -17,7 +17,7 @@
   ],
   "packages": [
     {
-      "id": 101,
+      "id": "101",
       "name": "Internet 1GB Daily",
       "category": "Daily",
       "validDays": 1,
@@ -31,7 +31,7 @@
       ]
     },
     {
-      "id": 102,
+      "id": "102",
       "name": "Internet 2GB Daily",
       "category": "Daily",
       "validDays": 1,
@@ -45,7 +45,7 @@
       ]
     },
     {
-      "id": 103,
+      "id": "103",
       "name": "Social 1.5GB Daily",
       "category": "Daily",
       "validDays": 1,
@@ -58,7 +58,7 @@
       ]
     },
     {
-      "id": 104,
+      "id": "104",
       "name": "Chat Daily Unlimited",
       "category": "Daily",
       "validDays": 1,
@@ -72,7 +72,7 @@
       ]
     },
     {
-      "id": 105,
+      "id": "105",
       "name": "Internet 5GB Weekly",
       "category": "Weekly",
       "validDays": 7,
@@ -86,7 +86,7 @@
       ]
     },
     {
-      "id": 106,
+      "id": "106",
       "name": "Internet 8GB Weekly",
       "category": "Weekly",
       "validDays": 7,
@@ -100,7 +100,7 @@
       ]
     },
     {
-      "id": 107,
+      "id": "107",
       "name": "Gaming 5GB Weekly",
       "category": "Weekly",
       "validDays": 7,
@@ -114,7 +114,7 @@
       ]
     },
     {
-      "id": 108,
+      "id": "108",
       "name": "Video 10GB Weekly",
       "category": "Weekly",
       "validDays": 7,
@@ -128,7 +128,7 @@
       ]
     },
     {
-      "id": 109,
+      "id": "109",
       "name": "Social 7GB Weekly",
       "category": "Weekly",
       "validDays": 7,
@@ -142,7 +142,7 @@
       ]
     },
     {
-      "id": 110,
+      "id": "110",
       "name": "Internet 12GB Weekly",
       "category": "Weekly",
       "validDays": 7,
@@ -156,7 +156,7 @@
       ]
     },
     {
-      "id": 111,
+      "id": "111",
       "name": "Internet 15GB Monthly",
       "category": "Monthly",
       "validDays": 30,
@@ -170,7 +170,7 @@
       ]
     },
     {
-      "id": 112,
+      "id": "112",
       "name": "Internet 20GB Monthly",
       "category": "Monthly",
       "validDays": 30,
@@ -184,7 +184,7 @@
       ]
     },
     {
-      "id": 113,
+      "id": "113",
       "name": "Internet 30GB Monthly",
       "category": "Monthly",
       "validDays": 30,
@@ -198,7 +198,7 @@
       ]
     },
     {
-      "id": 114,
+      "id": "114",
       "name": "Video 25GB Monthly",
       "category": "Monthly",
       "validDays": 30,
@@ -212,7 +212,7 @@
       ]
     },
     {
-      "id": 115,
+      "id": "115",
       "name": "Social 10GB Monthly",
       "category": "Monthly",
       "validDays": 30,
@@ -226,7 +226,7 @@
       ]
     },
     {
-      "id": 116,
+      "id": "116",
       "name": "Chat Monthly Unlimited",
       "category": "Monthly",
       "validDays": 30,
@@ -240,7 +240,7 @@
       ]
     },
     {
-      "id": 117,
+      "id": "117",
       "name": "Student 12GB Monthly",
       "category": "Monthly",
       "validDays": 30,
@@ -254,7 +254,7 @@
       ]
     },
     {
-      "id": 118,
+      "id": "118",
       "name": "Work-from-Home 40GB Monthly",
       "category": "Monthly",
       "validDays": 30,
@@ -268,7 +268,7 @@
       ]
     },
     {
-      "id": 119,
+      "id": "119",
       "name": "Combo 20GB Monthly",
       "category": "Monthly",
       "validDays": 30,
@@ -282,7 +282,7 @@
       ]
     },
     {
-      "id": 120,
+      "id": "120",
       "name": "Premium 60GB Monthly",
       "category": "Monthly",
       "validDays": 30,
@@ -319,6 +319,74 @@
       "status": "SUCCESS",
       "price": 10000,
       "createdAt": "2025-10-15T04:54:33.305Z"
+    },
+    {
+      "id": "60b1",
+      "userId": 2,
+      "packageId": 102,
+      "package": {
+        "id": 102,
+        "name": "Internet 2GB Daily",
+        "category": "Daily",
+        "validDays": 1,
+        "price": 15000,
+        "description": "2GB daily + 500MB social bonus",
+        "isActive": true,
+        "tags": [
+          "Daily",
+          "Bonus",
+          "All Network"
+        ]
+      },
+      "msisdn": "08123456789",
+      "status": "SUCCESS",
+      "price": 15000,
+      "createdAt": "2025-10-15T05:20:56.467Z"
+    },
+    {
+      "id": "fdb8",
+      "userId": 2,
+      "packageId": 115,
+      "package": {
+        "id": 115,
+        "name": "Social 10GB Monthly",
+        "category": "Monthly",
+        "validDays": 30,
+        "price": 45000,
+        "description": "10GB social apps for 30 days",
+        "isActive": true,
+        "tags": [
+          "Monthly",
+          "Social",
+          "Budget"
+        ]
+      },
+      "msisdn": "08123456789",
+      "status": "SUCCESS",
+      "price": 45000,
+      "createdAt": "2025-10-15T06:22:54.081Z"
+    },
+    {
+      "id": "ba08",
+      "userId": 2,
+      "packageId": "103",
+      "package": {
+        "id": "103",
+        "name": "Social 1.5GB Daily",
+        "category": "Daily",
+        "validDays": 1,
+        "price": 8000,
+        "description": "1.5GB Instagram/Facebook/TikTok for 24 hours",
+        "isActive": true,
+        "tags": [
+          "Daily",
+          "Social"
+        ]
+      },
+      "msisdn": "08123456789",
+      "status": "SUCCESS",
+      "price": 8000,
+      "createdAt": "2025-10-15T06:24:50.193Z"
     }
   ]
 }

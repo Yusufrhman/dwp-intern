@@ -5,7 +5,7 @@ interface InputProps {
   placeholder: string;
   value: string;
   onChange: (value: string) => void;
-  icon: any;
+  icon?: any;
   error?: string;
 }
 
@@ -20,6 +20,7 @@ export default function Input({
   error,
 }: InputProps) {
   const hasError = !!error;
+  const hasIcon = Boolean(Icon);
 
   return (
     <div>
@@ -33,19 +34,24 @@ export default function Input({
       </label>
 
       <div className="relative">
-        <Icon
-          aria-hidden
-          className={`absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 ${
-            hasError ? "text-red-500" : "text-gray-400"
-          }`}
-        />
+        {hasIcon && (
+          <Icon
+            aria-hidden
+            className={`absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 ${
+              hasError ? "text-red-500" : "text-gray-400"
+            }`}
+          />
+        )}
+
         <input
           id={id}
           type={type}
           value={value}
           onChange={(e) => onChange(e.target.value)}
           placeholder={placeholder}
-          className={`w-full pl-11 pr-3 py-2.5 rounded-lg outline-none transition
+          className={`w-full ${
+            hasIcon ? "pl-11" : "pl-3"
+          } pr-3 py-2.5 rounded-lg outline-none transition
             border text-gray-900 placeholder:text-gray-400
             focus-visible:outline-none
             ${

@@ -4,12 +4,22 @@ import { useAuth } from "../../features/auth/contexts/AuthContext";
 
 export default function SideBar() {
   const location = useLocation();
-  const { logout } = useAuth();
+  const { logout, user } = useAuth();
 
-  const menus = [
-    { name: "packages", icon: Globe, path: "/dashboard/package" },
-    { name: "analytics", icon: ClipboardClock, path: "/dashboard/transaction" },
+  const adminMenus = [
+    { name: "packages", icon: Globe, path: "/admin/package" },
   ];
+
+  const userMenus = [
+    { name: "packages", icon: Globe, path: "/dashboard/package" },
+    {
+      name: "transactions",
+      icon: ClipboardClock,
+      path: "/dashboard/transaction",
+    },
+  ];
+
+  const menus = user?.role === "admin" ? adminMenus : userMenus;
 
   return (
     <>

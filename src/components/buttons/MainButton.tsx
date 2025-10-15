@@ -19,7 +19,7 @@ export default function MainButton({
     <button
       onClick={onClick}
       disabled={disabled}
-      className={` w-full flex items-center justify-center gap-2 py-2.5 rounded-lg cursor-pointer
+      className={` flex items-center justify-center gap-2 py-2.5 rounded-lg cursor-pointer
         font-medium text-white bg-emerald-600 
         hover:bg-emerald-700 active:bg-emerald-800
         transition-colors duration-200

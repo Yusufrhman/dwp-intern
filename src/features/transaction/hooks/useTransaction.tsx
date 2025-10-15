@@ -23,7 +23,6 @@ export const useTransaction = ({
     retry: false,
   });
 
-  // Mutation: Create
   const createMutation = useMutation<Transaction, Error, Transaction>({
     mutationFn: createTransaction,
     onSuccess: async () => {
@@ -39,7 +38,6 @@ export const useTransaction = ({
     transactionListError: transactionListQuery.error,
     refetchTransactionList: transactionListQuery.refetch,
 
-    // Create
     createTransaction: createMutation.mutate,
     createTransactionAsync: createMutation.mutateAsync,
     isCreating: createMutation.isPending,

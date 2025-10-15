@@ -5,6 +5,7 @@ import PackagePage from "./features/package/pages/PackagePage";
 import { ProtectedRoute } from "./features/auth/components/ProtectedRoute";
 import DashboardLayout from "./components/layouts/DashboardLayout";
 import TransactionPage from "./features/transaction/pages/TransactionPage";
+import AdminPackagePage from "./features/package/pages/AdminPackagePage";
 
 export default function App() {
   return (
@@ -20,6 +21,10 @@ export default function App() {
           <Route index element={<Navigate to="package" replace />} />
           <Route path="package" element={<PackagePage />} />
           <Route path="transaction" element={<TransactionPage />} />
+        </Route>
+        <Route path="/admin" element={<DashboardLayout />}>
+          <Route index element={<Navigate to="package" replace />} />
+          <Route path="package" element={<AdminPackagePage />} />
         </Route>
       </Route>
     </Routes>

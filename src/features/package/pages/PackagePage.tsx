@@ -1,4 +1,3 @@
-"use client";
 import { useState } from "react";
 import { usePackage } from "../hooks/usePackage";
 import PackageCard from "../components/PackageCard";
