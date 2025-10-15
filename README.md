@@ -30,7 +30,7 @@ Aplikasi ini membutuhkan 2 proses yang berjalan secara bersamaan:
 Buka terminal pertama dan jalankan:
 
 ```bash
-json-server --watch db.json --port 3000
+npx json-server db.json
 ```
 
 JSON Server akan berjalan di `http://localhost:3000`
