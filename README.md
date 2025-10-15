@@ -1,73 +1,74 @@
-# React + TypeScript + Vite
+# DWP Intern Test
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplikasi web berbasis React + Typescript + Vite dengan backend menggunakan JSON Server untuk simulasi API.
 
-Currently, two official plugins are available:
+## 📋 Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Pastikan sistem Anda sudah terinstall:
+- [Node.js](https://nodejs.org/) (versi 14 atau lebih tinggi)
+- npm (biasanya sudah terinstall bersama Node.js)
 
-## React Compiler
+## 🚀 Instalasi
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. **Clone repository**
+   ```bash
+   git clone https://github.com/Yusufrhman/dwp-intern.git
+   cd dwp-intern
+   ```
 
-## Expanding the ESLint configuration
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🎯 Menjalankan Aplikasi
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Aplikasi ini membutuhkan 2 proses yang berjalan secara bersamaan:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 1. Jalankan JSON Server (Backend)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Buka terminal pertama dan jalankan:
+
+```bash
+json-server --watch db.json --port 3000
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+JSON Server akan berjalan di `http://localhost:3000`
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 2. Jalankan React App (Frontend)
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Buka terminal kedua dan jalankan:
+
+```bash
+npm run dev
 ```
+
+Aplikasi React akan berjalan di `http://localhost:5173` (atau port lain yang tersedia)
+
+## 👤 Akun Login
+
+2 akun untuk testing:
+### Admin Account
+- **Role**: Admin
+- **Phone**: 083183000267
+- **Password**: `123456`
+
+### Customer Account
+- **Role**: Customer
+- **Phone**: 08123456789
+- **Password**: `123456`
+
+## 🔧 Technologies Used
+
+- **React** - Library Typescript untuk membangun UI
+- **Vite** - Build tool yang cepat untuk modern web projects
+- **JSON Server** - Simulasi REST API dengan JSON file
+- **ESLint** - Linting tool untuk menjaga kualitas kode
+
+## 📞 Support
+
+Jika mengalami masalah, silakan buat issue di [GitHub Repository](https://github.com/Yusufrhman/dwp-intern/issues)
+
+---
+
+**Happy Coding! 🚀**
