@@ -60,15 +60,7 @@ Aplikasi React akan berjalan di `http://localhost:5173` (atau port lain yang ter
 
 ## 🔧 Technologies Used
 
-- **React** - Library Typescript untuk membangun UI
+- **React** - Library Javascript untuk membangun UI
 - **Vite** - Build tool yang cepat untuk modern web projects
 - **JSON Server** - Simulasi REST API dengan JSON file
 - **ESLint** - Linting tool untuk menjaga kualitas kode
-
-## 📞 Support
-
-Jika mengalami masalah, silakan buat issue di [GitHub Repository](https://github.com/Yusufrhman/dwp-intern/issues)
-
----
-
-**Happy Coding! 🚀**
